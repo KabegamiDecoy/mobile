@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+    max-width: 360px;
+}
+
+.container {
+    margin: auto;
+    max-width: 315px;
+}
+/*Header*/
+.header {
+    border-bottom: 1px solid #C7C7C7;
+}
+
+.header__block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+
+.burger__menu {
+    cursor: pointer;
+}
+/*Назад*/
+.back {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.button__back {
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #C7C7C7;
+    border-radius: 50%;
+}
+
+.text__back {
+    font-size: 15px;
+    font-weight: bold;
+}
+/*Навигация по настройкам*/
+.navigation {
+    margin-top: 32px;
+    margin-bottom: 15px;
+}
+
+.nav__link {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+/*Настройки доступа*/
+.settings__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.access__block {
+    margin: auto;
+    max-width: 344px;
+    width: 100%;
+    border: 1px solid #C7C7C7;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.access__title {
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+.access__subtitle {
+    font-size: 15px;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.access__desc {
+    font-size: 11px;
+}
+
+.input__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+}
+
+.input__block {
+    margin-top: 25px;
+}
+.input__title {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 8px;
+}
+.input__desc {
+    font-size: 15px;
+    color: #818181;
+    font-weight: 500;
+    margin-top: 6px;
+    padding-left: 24px;
+}
+.input__desc__password {
+    font-size: 13px;
+    margin-top: 24px;
+    padding-left: 24px;
+}
+.input__password {
+    padding-bottom: 15px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    max-width: 288px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #C7C7C7;
+}
+/*ЦВЕТ ИНПУТОВ*/
+input[type='radio'] {
+    position: relative;
+    height: 16px;
+    width: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+  }
+  
+  input[type='radio']::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #C7C7C7;
+  }
+  
+  input[type='radio']:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #4A1ABB;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+  }
+
+.buttons__block {
+    display: flex;
+    justify-content: space-between;
+    max-width: 239px;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 80px;
+}
+
+.button {
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #c7c7c7;
+    border-radius: 20px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button__save {
+    color: #ffffff;
+    background-color: #4A1ABB;
+}
+.button__save:active {
+    background-color: transparent;
+    color: black;
+}
